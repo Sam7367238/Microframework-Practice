@@ -1,0 +1,1 @@
+This is a PHP practice project, it is a microframework built on Slim Framework, Doctrine DBAL and twig.
