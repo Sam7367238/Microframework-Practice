@@ -14,6 +14,7 @@ $dotenv -> load();
 $app = $container -> get(App::class);
 $twig = $container -> get(Twig::class);
 
-require(BASE_PATH . "/config/middleware.php");
+$middlewareBootstrap = require(BASE_PATH . "/config/middleware.php");
+$middlewareBootstrap($app, $twig);
 
 return $app;
